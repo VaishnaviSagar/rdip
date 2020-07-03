@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ 
+<html>
+
+	<body>
+<p>Click on the 1st  button to get the results displayed on the button itslef,Surprise!!</p><br>
+<button onclick="this.innerHTML=Date()"> So, the time is???</button><br><br>
+<p>Second button gives the results at new line</p>
+<button onclick="displayDate()">Therefore,the Date is?</button>
+<script>
+function displayDate( )
+{
+	document.getElementById("demo").innerHTML = Date( );
+
+}
+</script>
+
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
