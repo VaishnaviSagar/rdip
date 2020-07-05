@@ -1,0 +1,126 @@
+`<html>
+	<head>
+		<title> BASIC CALCULATOR </title>
+		<script src ="primary.js"></script>
+<style>
+table t01,
+td,
+tr 
+	{
+	text-align:left;
+	border : 5px solid transparent;
+	table-layout:fixed;
+	width: 150;
+	height : 60;
+	border-color:grey;
+	border-collapse:collapse;
+	font-size :72px;
+}
+th
+	{
+	border-color:grey;
+}
+input {
+	width : 100%;
+	height :100%;
+	border-color : black;
+	background:transparent;
+}
+button {
+	display:inline-block;
+	font-size :18px;
+	text-align :left;
+	height:50;
+	width :60;
+}
+font {
+	font-size:32px;
+}
+body {
+	margin-left:38%;
+	margin-top:7%
+	background-image:url("img.jpg");
+	background-position:center;
+	background-repeat:repeat;
+	background-size:cover;
+}
+</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th colspan ="4" ><input type ="text"
+				    id ="result" /></th>
+			</tr>
+			<tr>
+				<td>
+					<button value = "7" onclick = "dis('7')"><font>7</font></button>
+				</td>
+				<td>
+					<button value = "8" onclick = "dis('8')"><font>8</font></button>
+				</td>
+				<td>
+					<button value = "9" onclick = "dis('9')"><font>9</font></button>
+				</td>
+				<td>
+					<button value = "C" onclick = "clr()"><font>CL</font></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value = "4" onclick = "dis('4')"><font>4</font></button>
+				</td>
+				<td>
+					<button value = "5" onclick ="dis('5')"><font>5</font></button>
+				</td>
+				<td>
+					<button value = "6" onclick ="dis('6')"><font>6</font></button>
+				</td>
+				<td>
+					<button value ="/" onclick="dis('/')"><font>/</font></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value = "1" onclick ="dis('1')"><font>1</font></button>
+				</td>
+				<td>
+					<button value = "2" onclick ="dis('2')"><font>2</font></button>
+				</td>
+				<td>
+					<button value = "3" onclick ="dis('3')"><font>3</font></button>
+				</td>
+				<td>
+					
+                                        <button value = "√" onclick ="dis('√')"><font>√</font></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value = "*" onclick = "dis('*')"><font>*</font></button>
+				</td>
+				<td>
+					<button value = "0" onclick = "dis('0')"><font>0</font></button>
+				</td>
+				<td>
+					<button value = "." onclick = "dis('.')"><font>.</font></button>
+				</td>
+				<td>
+					<button value = "%" onclick = "dis('%')"><font>%</font></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value = "+" onclick = "dis('+')"><font>+</font></button>
+				</td>
+				<td>
+					<button value = "-" onclick = "dis ('-')"><font>-</font></button>
+				</td>
+			<td colspan ="4">
+				<button style = "height:60;width :300;" value = "abs" onclick ="solve()">
+				<font> = </font></button>
+			</td>
+			</tr>
+			<td colspan = "2">
+				<button style = "height:60;width:150;" onclick "abs()"><font>Perfect Sq </font>
+	
